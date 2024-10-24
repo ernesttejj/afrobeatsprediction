@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if 'not' in pred %}
+        <img src="https://media.giphy.com/media/DhstvI3zZ598Nb1rFf/giphy.gif" alt="" srcset="">
+        <h3><strong>Result: </strong> <em>{{pred}}</em></h3>
+    {% elif 'not' not in pred %}
+        <img src="https://gifer.com/i/4QbH.gif" alt="" srcset="">
+        <h3><strong>Result: </strong> <em>{{pred}}</em></h3>
+    {% elif 'not' in prediction %}
+        <img src="https://media.giphy.com/media/ISOckXUybVfQ4/giphy.gif" alt="" srcset="">
+        <h3><strong>Result: </strong> {{title}} <em>{{prediction}}</em></h3>
+    {% elif 'not' not in prediction %}
+        <img src="https://media.giphy.com/media/CAxbo8KC2A0y4/giphy.gif" alt="" srcset="">
+        <h3><strong>Result: </strong> {{title}} <em>{{prediction}}</em></h3>
+    {% else %}
+        <h3><strong>Result Not Found</strong></h3>
+    {% endif %}
+</body>
+</html>
